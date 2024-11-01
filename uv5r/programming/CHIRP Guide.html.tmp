@@ -1,0 +1,422 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<HTML>
+<HEAD>
+	
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 3.6  (Windows)">
+	<META NAME="AUTHOR" CONTENT="Root">
+	<META NAME="CREATED" CONTENT="20120803;5331000">
+	<META NAME="CHANGED" CONTENT="20130114;19342058">
+	<META NAME="KSOProductBuildVer" CONTENT="1033-8.1.0.3010">
+	
+	<STYLE>
+		<!-- 
+		BODY,DIV,TABLE,THEAD,TBODY,TFOOT,TR,TH,TD,P { font-family:"Arial"; font-size:x-small }
+		 -->
+	</STYLE>
+	
+</HEAD>
+
+<BODY TEXT="#000000">
+<TABLE CELLSPACING="0" COLS="4" BORDER="0">
+	<COLGROUP WIDTH="106"></COLGROUP>
+	<COLGROUP WIDTH="97"></COLGROUP>
+	<COLGROUP WIDTH="598"></COLGROUP>
+	<COLGROUP WIDTH="331"></COLGROUP>
+	<TR>
+		<TD COLSPAN=4 HEIGHT="85" ALIGN="CENTER" VALIGN=MIDDLE><FONT SIZE=5>CHIRP Programming Reference<BR>Jim Unroe - KC9HI<BR>14-January-2013</FONT></TD>
+		</TR>
+	<TR>
+		<TD COLSPAN=4 HEIGHT="20" ALIGN="CENTER" VALIGN=MIDDLE><FONT SIZE=1>(send comments, suggestions or corrections to UV-5R@KC9HI.net)</FONT></TD>
+		</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE SDNUM="1033;0;MM/DD/YY"><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE>Column</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Values</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Description/Comment</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Requires</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE>Loc</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>see comment</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>This cell contains a fixed value (0-127) in each row representing each of the UV-5R's 128 channels</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE>Frequency</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>see comment</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Used for setting the receive (RX) frequency (MHz)</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>VHF: 136.000000 to 173.997500</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>UHF: 400.000000 to 519.997500</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE>Name</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>see comment</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Used for setting an optional alpha tag up to 7-characters</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Alpha characters: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Numeric digits: 0 1 2 3 4 5 6 7 8 9</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Special characters: ! @ # $ % ^ &amp; * ( ) + - = [ ] &lt; &gt; ? , . /</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE>Tone Mode</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Used for setting squelch using carrier squelch and/or CTCSS (aka PL) and/or DTS (aka DPL)</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>(none)</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>No tones or codes are transmitted or received (default)</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="20" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Tone</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>The radio will use CTCSS for transmit. In this mode, the receiver is carrier squelch</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Tone</TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="36" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>TSQL</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>The radio will use CTCSS for transmit. In this mode, the receiver is CTCSS with the same value as the transmitter</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>ToneSql</TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="36" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>DTCS</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>The radio will use DCS for transmit. In this mode, the receiver uses DCS with the same value as the transmitter</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>DTCS Code and DTCS Pol</TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="20" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Cross</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>The radio will use an asymmetric squelch configuration according to the value of 'Cross Mode'</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Cross Mode</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE>Tone</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Sets the transmit CTCSS frequency. Only used when enabled by other options</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="52" ALIGN="LEFT" VALIGN=MIDDLE>ToneSql</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Sets the receive (and sometimes transmit) CTCSS frequency. Only used when enabled by other options [UV-5R bug: receive tone frequencies of 136.5 Hz and lower will always be skipped when scanning regardless of the Skip setting]</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE>DTCS Code</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Sets the transmit DCS code. Only used when enabled by other options</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="20" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="20" ALIGN="LEFT" VALIGN=MIDDLE>DTCS Rx Code</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Sets the receive (and sometimes transmit) DCS code. Only used when enabled by other options</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="20" ALIGN="LEFT" VALIGN=MIDDLE>DTCS Pol</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Sets the DCS code polarity. Only used when enabled by other options</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>NN</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Transmit normal/Receive normal</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>RN</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Transmit reversed/Receive normal</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>NR</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Transmit normal/Receive reversed</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>RR</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Transmit reversed/Receive reversed</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="34" ALIGN="LEFT" VALIGN=MIDDLE>Cross Mode</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Used for setting squelch using carrier squelch and/or CTCSS (aka PL) and/or DTS (aka DPL). Only used when enabled by other options</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Tone Mode=Cross</TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Tone-&gt;Tone</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>The radio will use CTCSS for transmit and a different CTCSS for receive</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Tone (TX) and ToneSql (RX)</TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="20" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Tone-&gt;DTCS</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>The radio will use CTCSS for transmit and DCS for receive</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Tone (TX), DTCS Rx Code (RX) and DTCS Pol</TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="20" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>DTCS-&gt;Tone</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>The radio will use DCS for transmit and CTCSS for receive</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>DTCS Code (TX), DTCS Pol and ToneSql (RX)</TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>-&gt;Tone</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>The radio will not transmit CTCSS or DCS but will enable CTCSS for receive</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>ToneSql (RX)</TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="20" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>-&gt;DTCS</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>The radio will not transmit CTCSS or DCS but will enable DCS for receive</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>DTCS Rx Code (RX) and DTCS Pol</TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>DTCS-&gt;</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>The radio will use DCS for transmit. In this mode, the receiver is carrier squelch</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>DTCS Code (TX) and DTCS Pol</TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="20" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>DTCS-&gt;DTCS</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>The radio will use DCS for transmit and a different DCS for receive</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>DTCS Code (TX), DTCS Rx Code (RX) and DTCS Pol</TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE>Duplex</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Used for determining the transmit (TX) frequency</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="20" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>(none)</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Simplex. Sets the transmit frequency to the same value as the receive frequency (aka simplex)</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>-</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Sets the transmit frequency lower than the receive frequency by the Offset amount (aka - duplex)</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Offset</TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>+</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Sets the transmit frequency higher than the receive frequency by the Offset amount (aka + duplex)</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Offset</TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>split</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Sets the transmit frequency to the value in Offset (same value range as the receive frequency)</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Offset (entered as transmit frequency)</TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="20" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>off</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Receive only (transmit inhibited).</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="36" ALIGN="LEFT" VALIGN=MIDDLE>Offset</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Used for setting the transmit frequency difference (offset) from the receive frequency. When Duplex is set to 'split' this value is the actual transmit frequency</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE>Mode</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Sets the transmitter deviation and receiver IF bandwidth</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>FM</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>5KHz deviation (for Part 97 - Amateur Radio Service)</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>NFM</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>2.5KHz deviation (for Part 90 - Private Land Mobile Radio Services)</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE>Power</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Sets the transmit output power level</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>High</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>4 watts</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Low</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>1 watt</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE>Skip</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Sets the channel scan lockout</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Scan channel in scanning mode</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+	<TR>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" HEIGHT="17" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>S</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE>Skip (lockout) channel in scanning mode</TD>
+		<TD STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" ALIGN="LEFT" VALIGN=MIDDLE><BR></TD>
+	</TR>
+</TABLE>
+<!-- ************************************************************************** -->
+</BODY>
+
+</HTML>
